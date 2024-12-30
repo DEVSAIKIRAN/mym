@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="img/png" href="BOLDTECH-removebg-preview.png">
+  <title>boldtech</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/b68966c627.js" crossorigin="anonymous"></script>
+  <meta name="google-site-verification" content="dsv51rTmDbaV-RQfx5TyPiyHzCVeGFDcnFlTsgjdjsA" />
+</head>
+<body>
+  <center>
+        <center><a href="index.html"><header><img src="image-90x90-removebg-preview.png"><h1 class="h1">BOLDTECH</h1></header></a><hr></center>
+       <br><br><br><br><br><br><br><br><br><br><br><br>
+       
+  <div class="radio-player">
+    <h1 id="station-name"></h1><source src="" >
+        <img id="station-logo" src="" alt="Station Logo">
+  </source>
+    <audio id="audio-player" autoplay></audio>
+    <br>
+    <button id="prev-btn">⏮️</button>
+    <button id="play-pause-btn">▶️</button>
+    <button id="next-btn">⏭️</button>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="video">
+  
+</div>
+ </center>
+  <hr>
+  <footer><center>
+    <a href="in.html"><i class="fa-regular fa-envelope fa-2xl" style="color: #74C0FC;"></i><p class="h1">EMAIL US</p></a>
+    <A href="https://youtube.com/@boldtech-2707?si=UsCxJVPaAr7Wx8zF"><i class="fa-brands fa-youtube fa-2xl" style="color: #ff0000;" STYLE=" float: left; text-decoration: none;"></i> <p class="h1">YOUTUBE</p></A>     
+       <a href="https://whatsapp.com/channel/0029VakQ0rVFXUubrIfsfQ2C"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #08fd8a;" STYLE=" float: left; text-decoration: none;"></i> <P class="h1">WHATSAPP</P></a>
+    <a href="https://x.com/boldtech_2707"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #00d5ff;"></i><p CLASS="h1">X</p></a>
+<a href="https://discord.gg/UtBsd6aG"><i class="fa-brands fa-discord fa-2xl" style="color: #74C0FC;"></i><p class="h1">discord</p></a>
+<a href="https://t.me/boldtech2707"><i class="fa-brands fa-telegram fa-2xl" style="color: #74C0FC;"></i> <p style="color: aqua; text-decoration: none;">telegram</p></a></footer>
+</center>
+  <style>
+  body{
+    background: linear-gradient( 45deg,#00c8ff, #010758,#490d61,#8f973d,#3a2477,#505807);
+  }
+  .radio-player {
+    text-align: center;
+    border: 2px solid #cccccc61;
+    border-radius: 50px;
+    background-color: #f9f9f972;
+    height: 250px;
+    width: 250px;
+  }
+  
+  #station-name {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #station-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  #audio-player {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  ::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#efff3f,#3a2477,#00c8ff,#010758,#efff3f,#00c8ff);
+    border-radius: 600px;
+    cursor: pointer;
+}</style>
+  <script>const stationNameElement = document.getElementById('station-name');
+    const stationLogoElement = document.getElementById('station-logo');
+    const audioPlayer = document.getElementById('audio-player');
+    const playPauseBtn = document.getElementById('play-pause-btn');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    
+    let isPlaying = false;
+    let currentStationIndex = 0;
+    
+    const stations = [
+      {
+        name: 'Boldtech Telugu',
+        logo: 'https://zeno.fm/_next/image/?url=https%3A%2F%2Fimages.zeno.fm%2Frr2VZMGdSngr5yqsCk_xKQDOuMRhLaujPsEmWGBhG7s%2Frs%3Afit%3A240%3A240%2Fg%3Ace%3A0%3A0%2FaHR0cHM6Ly9zdHJlYW0tdG9vbHMuemVub21lZGlhLmNvbS9jb250ZW50L3N0YXRpb25zLzBhYmZlNGUyLTk2ZDItNDc3MS05MDY2LTM2OGZiNzhhMjIxMC9pbWFnZS8_dXBkYXRlZD0xNzI1ODkxODc5MDAwP3U9NTc1NjQzMg.webp&w=1920&q=100',
+        stream: 'https://stream-154.zeno.fm/rxztltraggwuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJyeHp0bHRyYWdnd3V2IiwiaG9zdCI6InN0cmVhbS0xNTQuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6IkhkdDlONlgxUWUyby1zeWgyRmstb3ciLCJpYXQiOjE3MjY5MzAzNDAsImV4cCI6MTcyNjkzMDQwMH0.wDZg4VgqkypbZNK2QIScJ9geVuYsXOkWRodLoHHVOkU'
+      },
+      // Add more stations here
+    ];
+    
+    function playStation(index) {
+      currentStationIndex = index;
+      stationNameElement.textContent = stations[index].name;
+      stationLogoElement.src = stations[index].logo;
+      audioPlayer.src = stations[index].stream;
+      audioPlayer.play();
+      isPlaying = true;
+      playPauseBtn.textContent = '⏸️';
+    }
+    
+    function pauseStation() {
+      audioPlayer.pause();
+      isPlaying = false;
+      playPauseBtn.textContent = '▶️';
+    }
+    
+    playPauseBtn.addEventListener('click', () => {
+      if (isPlaying) {
+        pauseStation();
+      } else {
+        playStation(currentStationIndex);
+      }
+    });
+    
+    prevBtn.addEventListener('click', () => {
+      const previousIndex = currentStationIndex - 1;
+      if (previousIndex < 0) {
+        playStation(stations.length - 1);
+      } else {
+        playStation(previousIndex);
+      }
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      const nextIndex = (currentStationIndex + 1) % stations.length;
+      playStation(nextIndex);
+    });</script>
+</body>
+</html>

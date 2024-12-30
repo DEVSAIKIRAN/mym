@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b68966c627.js" crossorigin="anonymous"></script>
+        <LINK REL="STYLESHEET" href="index.css">
+            <link rel="icon" type="img/png" href="BOLDTECH-removebg-preview.png">
+    <title>boldtech</title>
+    <meta name="google-site-verification" content="dsv51rTmDbaV-RQfx5TyPiyHzCVeGFDcnFlTsgjdjsA" />
+</head>
+<body><style>
+  body {
+    margin: 0;
+  }
+
+  header {
+
+    top: 0;
+    width: 100%;
+    background-color: #2e505c8a;
+  }
+
+  header h1 {
+    margin: 0;
+    text-align: center;
+  }
+</style>  <script>
+  // JavaScript code to make the header sticky (example)
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) {
+      header.style.position = 'fixed';
+      header.style.top = '0';
+    } else {
+      header.style.position = 'static';
+      header.style.top = 'auto';
+    }
+  });
+</script>
+    <center><header><a href="index.html"><img src="image-90x90-removebg-preview.png"><h1 class="h1">BOLDTECH</h1></a></header><hr></center>
+      <article><center>
+        <h1  style="background: linear-gradient(to right, #ffffff, #00fbff, #0000ff); color: transparent; -webkit-background-clip: text;">How to dual-boot Windows 11 and Linux on your PC</h1>
+        <img src="Dual-boot-Windows-11-and-Linux.avif" alt=""  style="width:290px">
+        <p class="h1">Today, Windows 11 is widely available on all kinds of PCs, and it packs a lot of improvements from previous releases. From cutting-edge desktops to versatile convertible laptops, you're more likely to have Windows 11 installed on the newest devices on the market. But as good as it may be, there are plenty of cases where you may prefer something like Linux over Microsoft's flagship OS. That said, not everyone might be ready to transition to Linux just yet. So, we've compiled a step-by-step guide to help you configure your PC to boot into Linux or Windows 11 whenever you want.</p><br>
+        <h1  style="background: linear-gradient(to left, #ffffff, #00fbff, #0000ff); color: transparent; -webkit-background-clip: text;">What you'll need</h1><br>
+        <p class="h1">Although Linux-powered laptops have become popular in recent years, we're assuming you already have Windows installed on your PC, since that's the case for most people. So, to follow along, you'll need a Windows 11 PC (though the same steps will work on Windows 10) and a USB flash drive (8GB or more) for installation media. Since it's possible to run into errors even after following all the steps correctly, we recommend getting an extra storage drive to back up your data in case anything goes wrong.</p><br>
+        <p style="background: linear-gradient(to left, #ffffff, #00fbff, #0000ff); color: transparent; -webkit-background-clip: text;">for Pendrives And for deals see our products page</p>
+        <br>
+        <br>
+        <h1 style="background: linear-gradient(to left,#ffffff, #00fbff, #0000ff); color: transparent; -webkit-background-clip: text;" >let's Begin</h1>
+        <br>
+        <br>
+        <h1 style="background: linear-gradient(to left, #ffffff, #00fbff, #0000ff); color: transparent; -webkit-background-clip: text;" >Preparing to dual-boot Linux</h1>
+        <p class="h1">Before you do anything else, there's something you need to be aware of. Modern Windows computers come with a feature called Secure Boot, which is meant to enhance the security of your device by preventing malicious software from loading onto your PC. Some Linux distributions, like Ubuntu, support Secure Boot, but many of them won't. That means you may have to disable Secure Boot if you want to use Linux on your PC, and that can be a significant security risk.</p>
+        <br><br><br>
+        <p class="h1">To disable Secure Boot, you'll need to follow these steps:</p>
+        <p class="h1">1.Open the Start menu and open the power menu in the bottom right corner. Then, hold Shift on your keyboard and click Restart. You'll be taken to a blue screen that looks somewhat like this.</p>
+        <img src="screenshot-2023-10-06-114528.avif" style="width: 290px;">
+        <br>
+        <p class="h1">2.Here, choose Troubleshoot, followed by Advanced options.</p>
+        <p class="h1">3.Select UEFI Firmware Settings.</p>
+        <img src="screenshot-2023-10-06-114544 (1).avif" width="290px">
+        <p class="h1">4.This will take you to your PC's BIOS settings, where you can turn off Secure Boot. Every BIOS is a little different, so you may have to look around. In the HP laptop we're using here, you can navigate to the System Configuration tab at the top and you'll find the Secure Boot option. It's set to Enabled by default, and you want to change it to Disabled.</p>
+        <img src="hp-bios-secure-boot-disabled.avif" width="290px">
+        <p class="h1">5.Save the changes and restart the computer to follow the rest of the process. If you ever stop using Linux, you can enable Secure Boot again by following the same steps in reverse order.</p>
+        <h1 style="background:linear-gradient(to left,#ffffff,#00fbff,#0000ff); -webkit-background-clip: text; color: transparent;">Creating Linux installation media</h1>
+        <br>
+        <p class="h1">If your PC is ready to boot Linux, you'll need to have a USB drive that you can install Linux from. To turn your flash drive into installation media, everything on it will be erased, so make sure you've backed up anything you might need.</p>
+        <br>
+        <br>
+        <p class="h1">1.Find and download the Linux distribution (distro) you want to use. There are a lot of them out there, but for this guide, we'll be using Ubuntu. Once you've completed the download, you should have a file with the ISO file extension.</p>
+        <p class="h1">2.Next, you'll need a tool that creates bootable USB drives from ISO files. You can download Rufus for this purpose.</p>
+        <br>
+        <p class="h1">you can download rufus for there website or click Here</p>
+        <a href="https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5.exe" download=""><button style="
+          background:linear-gradient(#876fca,#0011ff);
+           color: rgb(221, 255, 0);
+           border-radius: 50px;
+           height: 50px;
+           width: 50px;
+           text-decoration: none;
+           border:2px rgb(0, 0, 0) solid;
+           box-shadow: 100px rgb(0, 0, 0);
+       ">🔽</button></a>
+       <br>
+       <p class="h1">3.Run Rufus and insert the flash drive you want to use as installation media. Then, click Select and choose the ISO file you downloaded. All the options will be filled in automatically.</p>
+       <img src="rufus-create-ubuntu-boot-drive.avif" style="width: 290px;">
+       <br>
+       <p class="h1">4.Click Start, then click OK in the prompt that shows up. Let the process run its course and you'll have created installation media for Linux.</p>
+       <br>
+       <p class="h1">you can download ubuntu-desktop-24.04.1 Click here to download</p>
+       <a href="https://releases.ubuntu.com/24.04.1/ubuntu-24.04.1-desktop-amd64.iso?_gl=1*1omng8z*_gcl_au*MTM1MDg1NjU5NC4xNzIwNjk5MjA4" download=""><button style="
+        background:linear-gradient(#876fca,#0011ff);
+         color: rgb(221, 255, 0);
+         border-radius: 50px;
+         height: 50px;
+         width: 50px;
+         text-decoration: none;
+         border:2px rgb(0, 0, 0) solid;
+         box-shadow: 100px rgb(0, 0, 0);
+     ">🔽</button></a>
+             <h1 style="background:linear-gradient(to left,#ffffff,#00fbff,#0000ff); -webkit-background-clip: text; color: transparent;">Creating a partition to dual-boot Linux</h1>
+             <br>
+             <p class="h1">Next, you'll need to create a second partition on your drive for Linux. Partitions are like virtual divisions of a hard drive that are marked as different disks. For general use, partitions don't have much of a purpose, but you do need them for dual-booting. Here's how to create one.</p>
+             <br>
+             <p class="h1">1.Right-click your Start menu icon (or press Windows key + X on your keyboard) and choose Disk Management. You'll see a list of your drives and partitions that should look something like this.</p>
+             <img src="disk-management-default.avif" style="width: 290px;">
+             <br><p class="h1">2.Right-click your primary partition (it should be the one labeled as C:) and choose Shrink Volume...</p>
+             <p class="h1">3.Specify the amount of space you want to remove from the partition. This will be limited by the files you already have stored on it, and the amount you enter will be the space you have for your Linux installation.</p>
+             <p class="h1">4.The space you chose will be deducted from your partition, and it will be listed as unallocated space in the Disk Management window. You can leave it as is and close the window.</p>
+             <h1 style="background:#ffffff8d;color: rgba(0, 0, 0, 0.579);">‼️NOTE: You'll want at least a couple dozen gigabytes (multiply by 1024 for MB) for it to function properly, but you can go as high as you see fit. Just make sure you have enough space on both Windows and Linux partitions.</h1>
+             <br>
+             <img src="shrink-partition-in-disk-management-1.avif" width="290px"><br><br><br>
+             <img src="shrink-partition-in-disk-management-2.avif" width="290px"><br><br><br>
+             <img src="shrink-partition-in-disk-management-3.avif" width="290px"><br><br>
+             <h1 style="background:linear-gradient(to left,#ffffff,#00fbff,#0000ff); -webkit-background-clip: text; color: transparent;">Installing Linux to dual-boot with Windows 11</h1>
+             <p class="h1">Now you have the two main pieces of the puzzle, you're ready to install Linux on your empty partition. If you removed the USB installation media from your PC, insert it again (remove other flash drives), then follow these steps:</p>
+             <p class="h1">1.Open the Start menu and then click the power button and — while holding Shift on your keyboard — click Restart.</p>
+              <img src="screenshot-2023-10-06-113332.avif" alt="" width="290px">
+              <p class="h1">2.You'll be given a series of boot options. Click Use a device, then choose the USB flash drive you have inserted and your PC will boot from it.</p>
+              <img src="windows-11-recovery-environment.avif" alt="" width="290px">
+              <p class="h1">3.You'll now be in the Ubuntu boot menu. Press Enter to boot into Ubuntu.</p>
+              <p class="h1">4.Ubuntu and other Linux operating systems let you try it out by booting from the USB drive without installing it. To install Linux on your empty partition, click Install Ubuntu.</p>
+              <img src="ubuntu-installer-launch.avif" alt="" width="290px">
+              <p class="h1">5.Follow the setup experience by choosing your keyboard layout and connecting to Wi-Fi (optional). Choose your preferred options until you get to this page.</p>
+              <img src="install-ubuntu-alongside-windows.avif" alt="" width="290px">
+              <p class="h1">6.Here, you'll want to choose the first option that's chosen by default, at least if you want the easiest way to do things. This will install Ubuntu on the unallocated space you created before, leaving your Windows installation intact.</p>
+              <p class="h1">7.From here, it's mostly trivial stuff. Choose your region and set up your Ubuntu profile and the installation will begin. Once it's done, you'll be able to boot into Ubuntu without your USB flash drive.</p>
+              <h1 style="background:linear-gradient(to left,#ffffff,#00fbff,#0000ff); -webkit-background-clip: text; color: transparent;">Switching between Windows 11 and Linux</h1>
+              <p class="h1">Once Linux is installed on your PC, you should be given the option to boot into it right away, but that might not happen. If your Windows partition is set as the priority in your BIOS settings, you may constantly boot into Windows instead. The behavior will vary depending on your computer, so you may not need to do anything.</p><br>
+              <h1 class="h1">If you do find yourself stuck in Windows 11 though, here's what you can do:</h1>
+              <p class="h1">1.Open the Start menu and hold Shift on your keyboard as you click Restart.</p>
+              <p class="h1">2.Click Troubleshoot and then Advanced options.</p>
+              <img src="screenshot-2023-10-06-114528.avif" alt="" width="290px">
+              <p class="h1">3.Here, choose UEFI Firmware settings.</p>
+              <img src="screenshot-2023-10-06-114544 (1).avif" alt="" width="290px">
+              <p class="h1">4.You may need to press one of the function keys to open the BIOS setup. Once you're there, the process will vary depending on what PC you have. We're looking for options related to booting. On the HP laptop we're using here, you can find Boot options in the System Configuration tab.</p>
+              <p class="h1">5.Find an option related to boot order (UEFI Boot Order, in our example) and make sure the Linux drive is on top of the Windows drive.</p>
+              <p class="h1">6.In our example, we have to select the OS Boot Manager option, then use the F5/F6 keys to move Ubuntu to the top. Again, the process may vary by laptop, but the same principle should apply to any device.</p>
+              <img width="290px" alt="" src="ubuntu-first-boot-order.avif">
+              <p class="h1">7.If you're on a desktop, you may need to navigate to the Advanced Settings and switch the Boot Order inside your motherboard BIOS.</p>
+              <img src="bios-boot-order.avif" width="290px" alt="">
+              <p class="h1">8.Exit and save the changes. After a restart, you should see the Linux boot menu, which lets you continue into your Linux distribution or boot into Windows. You'll see this menu every time you restart your computer so you can always choose your preferred boot option.</p>
+              <img src="ubuntu-boot-manager.avif" alt="" width="290px">
+              <p class="h1">However, if your PC shows the Windows Boot Manager and doesn't display the option to boot into Ubuntu, you may need to modify the Hard Drive BBS Priorities in the BIOS. To do so,</p>
+              <p class="h1">1.Head back to your motherboard's BIOS and navigate to the Boot settings.</p>
+              <p class="h1">2.Click on the BBS (BIOS Boot Specification) option.</p>
+              <img src="boot-settings-bbs.avif" width="290px" alt="">
+              <p class="h1">On most MSI motherboards, this setting is called UEFI Hard Disk Drive BBS Priorities. But it can have a slightly different name depending on your motherboard manufacturer.</p>
+              <p class="h1">3.Set Ubuntu as Boot Option #1.</p>
+              <img src="boot-option-1.avif" width="290px" alt="">
+              <p class="h1">You can also use this setting to switch back to Windows 11.</p>
+              <p class="h1">That's how you can dual-boot Windows 11 and Linux side-by-side. While it may seem like an easy workaround for those who wish to dabble in multiple operating systems, there are certain caveats to this facility. Keep in mind you may need to find a way to transfer files between the two operating systems, such as by using a flash drive or cloud storage. Plus, you may not always be able to access the files on another operating system's boot drive. So, you might want to create a virtual machine using a hypervisor like VirtualBox if you don't want to go through the hassle of setting up dual on your system.</p>
+              <br>
+              <p class="h1">you can check our article1</p>
+              <br>
+              <p class="h1">But if you've had your fill of Linux, you can always head back to Disk Management and delete the partition where you installed the open-source OS. Otherwise, you can use GParted on Linux to delete the Windows partition instead. Either way, make sure to back up your data before doing that.</p>
+              <h1 class="h1">An ARTICLE BY VARUN.B</h1>
+<h1 class="h1">share:</h1><button style="height: 50px; width: 50px; border-radius: 50px;        background:linear-gradient(#876fca,#0011ff);
+color: rgb(221, 255, 0);
+border-radius: 50px;
+height: 50px;
+width: 50px;
+text-decoration: none;
+border:2px rgb(0, 0, 0) solid;
+box-shadow: 100px rgb(0, 0, 0);" id="shareBtn">
+      <img src="share-svgrepo-com.svg" style="height: 40px; width: 40px; border-radius: 50px;">
+    </button></center>
+      </article><hr>
+    <center><a href="in.html"><i class="fa-regular fa-envelope fa-2xl" style="color: #74C0FC;"></i><p class="h1">EMAIL US</p></a>
+        <A href="https://youtube.com/@boldtech-2707?si=UsCxJVPaAr7Wx8zF"><i class="fa-brands fa-youtube fa-2xl" style="color: #ff0000;" STYLE=" float: left; text-decoration: none;"></i> <p class="h1">YOUTUBE</p></A>     
+           <a href="https://whatsapp.com/channel/0029VakQ0rVFXUubrIfsfQ2C"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #08fd8a;" STYLE=" float: left; text-decoration: none;"></i> <P class="h1">WHATSAPP</P></a>
+        <a href="https://x.com/boldtech_2707"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #00d5ff;"></i><p CLASS="h1">X</p></a>
+       <a href="https://discord.gg/UtBsd6aG"><i class="fa-brands fa-discord fa-2xl" style="color: #74C0FC;"></i><p class="h1">discord</p></a>
+       <a href="https://t.me/boldtech2707"><i class="fa-brands fa-telegram fa-2xl" style="color: #74C0FC;"></i> <p style="color: aqua; text-decoration: none;">telegram</p></a></footer>
+       </center><script>
+               const shareBtn = document.getElementById('shareBtn')
+
+shareBtn.addEventListener('click', event => {
+
+  // Check for Web Share api support
+  if (navigator.share) {
+    // Browser supports native share api
+    navigator.share({
+      text: 'Please read this great article: ',
+      url: 'https://boldtech.pages.dev/article3'
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+      .catch((err) => console.error(err));
+  } else {
+    // Fallback
+    alert("The current browser does not support the share function. Please, manually share the link")
+  }
+});
+
+       </script>
+
+</body>
+</html>
